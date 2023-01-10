@@ -1,0 +1,18 @@
+Webpack (imports/exports)
+  Babel 
+  Scss
+  Eslint
+  2 Modes
+    - Dev
+      Dev Server (Отображение изменений на локальном сервере), SourceMaps (Исходные карты для модулей), Eslint (инструмент, который служит для поддержки чистоты кода), Not Minified JS & CSS
+    - Prod 
+      Minified Code
+Git (Система контролей версий)
+
+  Production
+    1.0.0
+    0 -----------
+  Development
+    1.0.2
+    1 ------------ Pool Reqwest
+    
