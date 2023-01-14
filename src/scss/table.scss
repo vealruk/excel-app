@@ -9,6 +9,25 @@
   overflow-x: auto;
   padding-bottom: 2px;
 
+  &::-webkit-scrollbar {
+    /* ширина для вертикального скролла */
+    height: 8px;
+    /* высота для горизонтального скролла */
+    background-color: #e0e0e0;
+  }
+
+  /* ползунок скроллбара */
+  &::-webkit-scrollbar-thumb {
+    background-color: #a9a9a9;
+    border-radius: 9em;
+    box-shadow: inset 1px 1px 10px #f3faf7;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: #7a7a7a;
+  }
+
+
   .row {
     display: flex;
     min-height: 20px;
