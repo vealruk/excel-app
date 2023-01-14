@@ -11,7 +11,7 @@ module.exports = {
   env: {
     es2021: true,
     browser: true,
-    node: true
+    node: 1
   },
   rules: {
     semi: "off",
@@ -20,7 +20,15 @@ module.exports = {
     "require-jsdoc": "off",
     'linebreak-style': ['error', process.env.NODE_ENV === 'prod' ? 'unix' : 'windows'],
     "eol-last": 0,
-    "no-multiple-empty-lines": ["error", { "max": 1, "maxEOF": 0 }],
+    "object-curly-spacing": ["error", "always"],
+    "no-trailing-spaces": ["error", {
+      "skipBlankLines": true
+    }],
+    "operator-linebreak": "off",
+    "max-len": "off",
+    "indent": "off",
+    // "no-unused-vars": ["warn"]
+    // "quotes": ["error", "double",{ "avoidEscape": true }]
   },
   extends: "google",
 }
