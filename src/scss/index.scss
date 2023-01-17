@@ -19,6 +19,23 @@
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 12px;
+  
+  &::-webkit-scrollbar {
+    /* ширина для вертикального скролла */
+    width: 15px;
+    /* высота для горизонтального скролла */
+    background-color: #e0e0e0;
+  }
+
+  /* ползунок скроллбара */
+  &::-webkit-scrollbar-thumb {
+    background-color: #a9a9a9;
+    border-radius: 9em;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: #7a7a7a;
+  }
 }
 
 .excel {
