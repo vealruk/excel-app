@@ -1,5 +1,5 @@
 module.exports = {
-  parser: "@babel/eslint-parser",
+  parser: '@babel/eslint-parser',
   parserOptions: {
     requireConfigFile: false,
     ecmaVersion: 'latest',
@@ -14,21 +14,21 @@ module.exports = {
     node: 1
   },
   rules: {
-    semi: "off",
-    "arrow-parens": "off",
-    "comma-dangle": "off",
-    "require-jsdoc": "off",
+    'semi': 'off',
+    'arrow-parens': 'off',
+    'comma-dangle': 'off',
+    'require-jsdoc': 'off',
     'linebreak-style': ['error', process.env.NODE_ENV === 'prod' ? 'unix' : 'windows'],
-    "eol-last": 0,
-    "object-curly-spacing": ["error", "always"],
-    "no-trailing-spaces": ["error", {
-      "skipBlankLines": true
+    'eol-last': 0,
+    'object-curly-spacing': ['error', 'always'],
+    'no-trailing-spaces': ['error', {
+      'skipBlankLines': true
     }],
-    "operator-linebreak": "off",
-    "max-len": "off",
-    "indent": "off",
+    'operator-linebreak': 'off',
+    'max-len': 'off',
+    'indent': 'off',
     // "no-unused-vars": ["warn"]
     // "quotes": ["error", "double",{ "avoidEscape": true }]
   },
-  extends: "google",
+  extends: 'google',
 }
