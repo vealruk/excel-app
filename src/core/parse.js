@@ -1,5 +1,5 @@
 export function parse(value = '') {
-  try {
+  try { // временный try
     if (value.startsWith('=')) {
       try {
         return eval(value.slice(1))
