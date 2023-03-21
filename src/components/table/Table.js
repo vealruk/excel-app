@@ -33,7 +33,7 @@ export class Table extends ExcelComponent {
     this.selectCell(this.$root.find('[data-id="0:0"]'))
 
     this.$on('formula:input', value => {
-      if (value) {
+      if (value) { // временная проверка
         this.selection.current
           .attr('data-value', value)
           .text(parse(value))
@@ -58,7 +58,6 @@ export class Table extends ExcelComponent {
     this.selection.select($cell)
     this.$emit('table:select', $cell)
     const styles = $cell.getStyles(Object.keys(defaultStyles))
-    console.log('Styles: ', styles);
     this.$dispatch(actions.changeStyles(styles))
   }
 
